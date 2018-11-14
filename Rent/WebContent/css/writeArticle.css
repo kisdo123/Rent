@@ -23,7 +23,11 @@
 	text-align: center;
 }
 
-
+#divwrite{
+	margin-bottom: 30px;
+	margin-right: 13%;
+	text-align: right;
+}
 
 
 table {
@@ -68,21 +72,25 @@ input[type="text"] {
 }
 
 input[type="text"]:focus{
-	border : 4px solid #636363;
-}
+	outline: none;
+	border: 3px solid #ddd;
+} 
 
 
 textarea {
 	width: 95%;
-	height: 800px;
+	height: 750px;
 	resize: none;
 	border: none;
 }
 
 
 textarea:focus{
-	border : 5px solid #636363;
+	outline: none;
+	border: 3px solid #ddd;
 }
+
+
 #divbtn {
 	margin-bottom: 30px;
 	margin-right: 15%;
