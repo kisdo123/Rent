@@ -30,7 +30,7 @@
 				</tbody>
 			</table>
 			<div id="write">
-				<input id="writebtn" type="submit" value="등록하기 ">
+				<button class="btn btnwrite">작성 완료</button>
 			</div>
 		</form>
 	</div>

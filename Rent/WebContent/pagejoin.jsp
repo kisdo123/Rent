@@ -12,7 +12,7 @@
 <body class="text-center" oncontextmenu="return false" ondragstart="return false" onselect="return false">
 	<form action="#" method="post" class="form-signin" >
 		<br>
-		<h1>회 원 가 입</h1>
+		<img id="logo" src="image/logoeng.PNG">
 		<br>
 		<input type="text" id="inputID" class="form-control" placeholder="아이디" required autofocus>
 		<input type="text" id="name" class="form-control" placeholder="이름" required >

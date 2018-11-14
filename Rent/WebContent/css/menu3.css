@@ -23,12 +23,6 @@
 	text-align: center;
 }
 
-
-
-
-
-
-
 /* 테이블 CSS */
 #divtable {
 	margin-right: 20px;
@@ -62,19 +56,11 @@
 	height: 70px;
 }
 
-
-
-
-
-
-
-#divbtn{
+#divbtn {
 	margin-bottom: 30px;
-    margin-right: 15%;
-    text-align: right;
+	margin-right: 15%;
+	text-align: right;
 }
-
-
 
 .btn {
 	display: inline-block;
@@ -90,14 +76,11 @@
 	background-color: #717b71;
 	border: 1px solid #717b71;
 	border-radius: 4px;
-	color : white;
+	color: white;
 }
-
-
 
 .btnwrite:hover {
 	color: white;
 	background-color: #2b2926;
 	border-color: #2b2926;
 }
-
