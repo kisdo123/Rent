@@ -103,29 +103,26 @@
 
 					</table>
 					<div style="margin-bottom: 100px;">
-					공간:
-					<select name="room">
-						<option value="">------공간 선택------</option>
-						<option value="">합주실(소)</option>
-						<option value="">합주실(대)</option>
-						<option value="">커뮤니티 스튜디오</option>
-						<option value="">999홀</option>
-						<option value="">허브홀</option>
-					</select>
-					&emsp;&emsp;&emsp;&emsp;
-					시간:
-					<select name="roomtime">
-						<option value="">------시간 선택------</option>
-						<option value="">1</option>
-						<option value="">2</option>
-						<option value="">3</option>
-						<option value="">4</option>
-						<option value="">5</option>
-					</select>
+						공간: <select name="room">
+							<option value="">------공간 선택------</option>
+							<option value="">합주실(소)</option>
+							<option value="">합주실(대)</option>
+							<option value="">커뮤니티 스튜디오</option>
+							<option value="">999홀</option>
+							<option value="">허브홀</option>
+						</select> &emsp;&emsp;&emsp;&emsp; 시간: <select name="roomtime">
+							<option value="">------시간 선택------</option>
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+						</select>
 					</div>
 					<input class="btn btncalender" type="submit" value="결정하기">
 				</form>
 			</div>
 		</div>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
+</div>
+<jsp:include page="footer.jsp"></jsp:include>
