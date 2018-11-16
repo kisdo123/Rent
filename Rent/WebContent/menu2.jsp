@@ -2,6 +2,54 @@
 	pageEncoding="UTF-8"%>
 <jsp:include page="header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/menu2.css">
+
+<script>
+	$(function() {
+
+		$("input").change(function() {
+
+			var d1 = $("#date1").val();
+			var d2 = $("#date2").val();
+			var d3 = $("#date3").val();
+			var d4 = $("#date4").val();
+			var d5 = $("#date5").val();
+			var d6 = $("#date6").val();
+			
+			
+			var month = $("#month").text();
+
+			if ($("#date1").is(":checked")) {
+				$("#datespan").val(month + " " + d1 + "일");
+			}
+			
+			if ($("#date2").is(":checked")) {
+				$("#datespan").val(month + " " + d2 + "일");
+			}
+			
+			if ($("#date3").is(":checked")) {
+				$("#datespan").val(month + " " + d3 + "일");
+			}
+			
+			if ($("#date4").is(":checked")) {
+				$("#datespan").val(month + " " + d4 + "일");
+			}
+			
+			if ($("#date5").is(":checked")) {
+				$("#datespan").val(month + " " + d5 + "일");
+			}
+			if ($("#date6").is(":checked")) {
+				$("#datespan").val(month + " " + d6 + "일");
+			}
+			
+
+		});
+		
+	
+		
+
+	});
+</script>
+
 </head>
 <jsp:include page="topMenu.jsp"></jsp:include>
 <div id="container">
@@ -26,7 +74,7 @@
 
 
 			<button class="btn btncalender">이전달</button>
-			<b id="month">11월</b>
+			<b id="month">2018년 11월</b>
 			<button class="btn btncalender">다음달</button>
 
 
@@ -46,7 +94,8 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>1</td>
+								<td><input type="radio" id="date1" name="calendar"
+									value="1">1</td>
 								<td>1</td>
 								<td>1</td>
 								<td>1</td>
@@ -55,7 +104,8 @@
 								<td>1</td>
 							</tr>
 							<tr>
-								<td>2</td>
+								<td><input type="radio" id="date2" name="calendar"
+									value="2">2</td>
 								<td>2</td>
 								<td>2</td>
 								<td>2</td>
@@ -64,7 +114,8 @@
 								<td>2</td>
 							</tr>
 							<tr>
-								<td>3</td>
+								<td><input type="radio" id="date3" name="calendar"
+									value="3">3</td>
 								<td>3</td>
 								<td>3</td>
 								<td>3</td>
@@ -73,7 +124,8 @@
 								<td>3</td>
 							</tr>
 							<tr>
-								<td>4</td>
+								<td><input type="radio" id="date4" name="calendar"
+									value="4">4</td>
 								<td>4</td>
 								<td>4</td>
 								<td>4</td>
@@ -82,7 +134,8 @@
 								<td>4</td>
 							</tr>
 							<tr>
-								<td>5</td>
+								<td><input type="radio" id="date5" name="calendar"
+									value="5">5</td>
 								<td>5</td>
 								<td>5</td>
 								<td>5</td>
@@ -91,7 +144,8 @@
 								<td>5</td>
 							</tr>
 							<tr>
-								<td>6</td>
+								<td><input type="radio" id="date6" name="calendar"
+									value="6">6</td>
 								<td>6</td>
 								<td>6</td>
 								<td>6</td>
@@ -103,14 +157,18 @@
 
 					</table>
 					<div style="margin-bottom: 100px;">
-						공간: <select name="room">
+						날짜 : <input id="datespan">&emsp;&emsp;
+						
+						공간 : <select name="room">
 							<option value="">------공간 선택------</option>
 							<option value="">합주실(소)</option>
 							<option value="">합주실(대)</option>
 							<option value="">커뮤니티 스튜디오</option>
 							<option value="">999홀</option>
 							<option value="">허브홀</option>
-						</select> &emsp;&emsp;&emsp;&emsp; 시간: <select name="roomtime">
+						</select>&emsp;&emsp;
+						
+						시간 : <select name="roomtime">
 							<option value="">------시간 선택------</option>
 							<option value="">1</option>
 							<option value="">2</option>
