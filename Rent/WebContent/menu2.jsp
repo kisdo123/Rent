@@ -89,7 +89,7 @@
 				var day_month = SubCalendar.getMonth(); // 월
 				var day = Calendar.getDate(); // 날짜
 				var week_day = Calendar.getDay(); // 요일
-				var datevalue = year+"-"+(month+1)+"-"+day;
+				var datevalue = year + "-" + (month + 1) + "-" + day;
 
 				var INPUT_room = "<span id='sp1'><input type='radio' name='roomselect' value='"+datevalue+"' class='room1'>합주실(소)</span><br>"
 						+ "<span id='sp2'><input type='radio' name='roomselect' value='"+datevalue+"' class='room2'>합주실(대)</span><br>"
@@ -171,6 +171,7 @@
 
 	$(function() {
 
+		// 이전 달로 가는 버튼
 		$("#btnback").click(function() {
 
 			month--;
@@ -187,6 +188,7 @@
 			}
 		});
 
+		// 다음달로 가는 버튼
 		$("#btngo").click(function() {
 
 			if (month < 11) {
@@ -206,68 +208,56 @@
 
 		$("#radioButton").click(
 
-				function() {
+		function() {
+			var radioVal = $('input[name="roomselect"]:checked').val();
+			if ($(".room1").is(":checked")) {
 
-					if ($(".room1").is(":checked")) {
+				var spantext = $("#sp1").text();
+				var roomNumber = 1;
 
-						var radioVal = $('input[name="roomselect"]:checked')
-								.val();
+				$("#roomId").val(roomNumber);
+				$("#date").val(radioVal);
+				$("#dateroom").val(radioVal + " 합주실(소)");
 
-						var spantext = $("#sp1").text();
-						var roomNumber = 1;
+			} else if ($(".room2").is(":checked")) {
 
-						$("#roomId").val(roomNumber);
-						$("#date").val(radioVal);
-						$("#dateroom").val(radioVal + " 합주실(소)");
+				var spantext = $("#sp2").text();
+				var roomNumber = 2;
 
-					} else if ($(".room2").is(":checked")) {
+				$("#roomId").val(roomNumber);
+				$("#date").val(radioVal);
+				$("#dateroom").val(radioVal + " 합주실(대)");
 
-						var radioVal = $('input[name="roomselect"]:checked')
-								.val();
+			} else if ($(".room3").is(":checked")) {
 
-						var spantext = $("#sp2").text();
-						var roomNumber = 2;
+				var spantext = $("#sp3").text();
+				var roomNumber = 3;
 
-						$("#roomId").val(roomNumber);
-						$("#date").val(radioVal);
-						$("#dateroom").val(radioVal + " 합주실(대)");
+				$("#roomId").val(roomNumber);
+				$("#date").val(radioVal);
+				$("#dateroom").val(radioVal + " 커뮤니티");
 
-					} else if ($(".room3").is(":checked")) {
-						var radioVal = $('input[name="roomselect"]:checked')
-								.val();
+			} else if ($(".room4").is(":checked")) {
 
-						var spantext = $("#sp3").text();
-						var roomNumber = 3;
+				var spantext = $("#sp4").text();
+				var roomNumber = 4;
 
-						$("#roomId").val(roomNumber);
-						$("#date").val(radioVal);
-						$("#dateroom").val(radioVal + " 커뮤니티");
+				$("#roomId").val(roomNumber);
+				$("#date").val(radioVal);
+				$("#dateroom").val(radioVal + " 999홀");
 
-					} else if ($(".room4").is(":checked")) {
-						var radioVal = $('input[name="roomselect"]:checked')
-								.val();
+			} else if ($(".room5").is(":checked")) {
 
-						var spantext = $("#sp4").text();
-						var roomNumber = 4;
+				var spantext = $("#sp5").text();
+				var roomNumber = 5;
 
-						$("#roomId").val(roomNumber);
-						$("#date").val(radioVal);
-						$("#dateroom").val(radioVal + " 999홀");
+				$("#roomId").val(roomNumber);
+				$("#date").val(radioVal);
+				$("#dateroom").val(radioVal + " 허브홀");
 
-					} else if ($(".room5").is(":checked")) {
-						var radioVal = $('input[name="roomselect"]:checked')
-								.val();
+			}
 
-						var spantext = $("#sp5").text();
-						var roomNumber = 5;
-
-						$("#roomId").val(roomNumber);
-						$("#date").val(radioVal);
-						$("#dateroom").val(radioVal + " 허브홀");
-
-					}
-
-				});
+		});
 
 	});
 </script>
@@ -294,7 +284,7 @@
 			<br> <br> <br> <br>
 
 
-			
+
 			<button id="btnback" class="btn btncalender">이전달</button>
 			<b id="monthTitle"></b>
 			<button id="btngo" class="btn btncalender">다음달</button>
@@ -307,14 +297,13 @@
 
 					</table>
 					<div style="margin-bottom: 100px;">
-					
+
 						보여줌 : <input type="text" name="dateroom" id="dateroom"
-							readonly="readonly">&emsp;&emsp; 히든할거 : 
+							readonly="readonly">&emsp;&emsp; 히든할거 :
 						<!-- 히든으로 날짜 데이터 넘겨줌  -->
 						<input type="text" name="date" id="date" readonly="readonly">
 						<!-- 히든으로 공간 데이터 넘겨줌 -->
-						<input type="text"
-							name="roomId" id="roomId" readonly="readonly">
+						<input type="text" name="roomId" id="roomId" readonly="readonly">
 
 						&emsp;&emsp; 시간 : <select name="roomtime">
 							<option value="">------시간 선택------</option>
