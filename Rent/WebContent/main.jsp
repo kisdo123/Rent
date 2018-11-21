@@ -98,8 +98,8 @@
 			<a id="prev">〈</a> <a id="next">〉</a>
 		</div>
 		<div class="contents">
-			<div style="background-color: blue;">게시판</div>
-			<div>
+			<div class="divboard"><a style="font-size: 50px; color: #757575; padding-left: 10%;" href="menu3.jsp"><b>게시판</b></a></div>
+			<div class="divvideo">
 				<font size="10px" color="#757575" style="padding-left: 10%;"><b>동영상</b></font><sub><a href="https://vimeo.com/haja/videos" style="color: #757575">&emsp;더보기➤</a></sub>
 				<iframe src="https://player.vimeo.com/video/51323431" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
