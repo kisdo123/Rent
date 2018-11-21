@@ -12,7 +12,7 @@
 <body class="text-center" oncontextmenu="return false" ondragstart="return false" onselect="return false">
 	<form action="#" method="post" class="form-signin">
 		<br>
-		<img id="logo" src="image/logoeng.PNG">
+		<a href="main.jsp"><img id="logo" src="image/logoeng.PNG"></a>
 		<div class="joindiv"><b>아이디</b></div>
 		<input type="text" id="inputID" class="form-control" placeholder="아이디" required autofocus>
 		<div class="joindiv"><b>이름</b></div>
