@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <jsp:include page="header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/menu2.css">
-<script type="text/javascript" src="script/menu1.js"></script>
+<script type="text/javascript" src="script/menu2.js"></script>
 
 </head>
 <jsp:include page="topMenu.jsp"></jsp:include>
