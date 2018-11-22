@@ -1,17 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/roomconcert(b).css">
-<script>
-	$(function() {
-		$("#sidemenu li:nth-child(2)").hover(function() {
-			$('#not').css("color", "black");
-			$(this).css('cursor', "default");
-		}, function() {
-			$('#not').css("color", "black");
-			$(this).css('cursor', "default");
-		});
-	});
-</script>
+<script type="text/javascript" src="script/menu1.js"></script>
 </head>
 <jsp:include page="topMenu.jsp"></jsp:include>
 <div id="container">
