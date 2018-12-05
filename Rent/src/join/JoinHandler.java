@@ -13,7 +13,7 @@ import main.handler.CommandHandler;
 public class JoinHandler implements CommandHandler{
 
 	// 회원가입 페이지 주소를 상수로 만듬
-	private static final String FORM_VIEW = "pagejoin.jsp";
+	private static final String FORM_VIEW = "/WEB-INF/view/pagejoin.jsp";
 	
 	
 	// 사용자는 url board/join →

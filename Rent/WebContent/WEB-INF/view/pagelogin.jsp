@@ -12,7 +12,7 @@
 </head>
 <body class="text-center" oncontextmenu="return false" ondragstart="return false" onselect="return false">
 	<form action="login" method="post" class="form-signin">
-		<a href="main.jsp"><img id="logo" class="mb-4" src="image/logoeng.PNG"></a>
+		<img id="logo" class="mb-4" src="image/logoeng.PNG">
 		<input type="text" id="inputID" class="form-control" placeholder="ID" name="id" maxlength="10" value="${param.id }" required autofocus>
 		<c:if test="${errors.id }">
 			<script>
