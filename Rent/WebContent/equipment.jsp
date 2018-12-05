@@ -1,19 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="/part/header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/equipment.css">
-<script>
-	$(function() {
-		$("#sidemenu li:nth-child(2)").hover(function() {
-			$('#not').css("color", "black");
-			$(this).css('cursor', "default");
-		}, function() {
-			$('#not').css("color", "black");
-			$(this).css('cursor', "default");
-		});
-	});
-</script>
+<script type="text/javascript" src="script/equiment.js"></script>
 </head>
-<jsp:include page="topMenu.jsp"></jsp:include>
+<jsp:include page="/part/topMenu.jsp"></jsp:include>
 <div id="container">
 	<div id="bennerimage">
 		<img src="image/benner.jpg" width="100%" height="300px">
@@ -421,4 +411,4 @@
 		</div>
 	</div>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="/part/footer.jsp"></jsp:include>

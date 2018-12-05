@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="/part/header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/menu4.css">
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=96b8706698bbb616b540588b939a86bc&libraries=services"></script>
 </head>
-<jsp:include page="topMenu.jsp"></jsp:include>
+<jsp:include page="/part/topMenu.jsp"></jsp:include>
 <div id="container">
 	<div id="bennerimage">
 		<img src="image/benner.jpg" width="100%" height="300px">
@@ -67,4 +67,4 @@
 	</div>
 	<script type="text/javascript" src="script/menu4.js"></script>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="/part/footer.jsp"></jsp:include>

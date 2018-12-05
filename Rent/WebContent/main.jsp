@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="/part/header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="script/main.js"></script>
 </head>
-<jsp:include page="topMenu.jsp"></jsp:include>
+<jsp:include page="/part/topMenu.jsp"></jsp:include>
 <div id="container">
 	<div id="container">
 		<div id="imgs">
@@ -44,4 +44,4 @@
 		</div>
 	</div>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="/part/footer.jsp"></jsp:include>

@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="/part/header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/roomhubhall.css">
 <script type="text/javascript" src="script/menu1.js"></script>
 </head>
-<jsp:include page="topMenu.jsp"></jsp:include>
+<jsp:include page="/part/topMenu.jsp"></jsp:include>
 <div id="container">
 	<div id="bennerimage">
 		<img src="image/benner.jpg" width="100%" height="300px">
@@ -50,4 +50,4 @@
 		</div>
 	</div>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="/part/footer.jsp"></jsp:include>
